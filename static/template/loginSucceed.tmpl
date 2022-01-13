@@ -1,0 +1,17 @@
+{{define "loginSucceed.tmpl"}}
+<head>
+    <title>Quizz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/question.css" rel="stylesheet" type="text/css"/>
+</head>
+    <main>
+        <div class="container">
+                    <h1>{{ .message }}</h1>
+                    <h1>Số câu hỏi cần hoàn thành: {{ .lenquizz }}</h1>
+                    <p>Chọn "Lưu câu trả lời" để lưu câu trả lời của mình trước khi chuyển sang câu hỏi khác!</p>
+        </div>
+    </main>
+{{end}}
+
+

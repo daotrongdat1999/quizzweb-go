@@ -1,0 +1,18 @@
+{{define "point.tmpl"}}
+<head>
+    <title>Quizz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/login.css" rel="stylesheet" type="text/css"/>
+</head>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="login-form">
+                <h1>Số câu hỏi: {{ .lenquizz }}</h1>
+                <h1>Số câu đúng: {{ .point }}</h1>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+{{end}}

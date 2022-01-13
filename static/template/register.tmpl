@@ -1,0 +1,45 @@
+{{define "register.tmpl"}}
+<html>
+    <head>
+        <title>Đăng ký</title>
+        <script language="javascript" src="static/js/alert.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="static/css/login.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                
+            </div>
+        </header>
+        <main>
+            <div class="container">
+            <div class="login-form">
+                <form name="registform" action="/register" onsubmit="return validateForm2()" method="post">
+                    <h1>Đăng ký</h1>
+                    <div class="input-box">
+                        <i ></i>
+                        <input type="text" id="username" name="username" placeholder="Nhập username">
+                    </div>
+                    <div class="input-box">
+                        <i ></i>
+                        <input type="password" id="password" name="password" placeholder="Nhập mật khẩu">
+                    </div>
+                    <div class="btn-box">
+                        <button type="submit">
+                            Đăng ký
+                        </button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+           
+            </div>
+        </footer>
+    </body>
+</html>
+{{end}}

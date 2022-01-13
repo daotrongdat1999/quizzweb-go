@@ -1,0 +1,84 @@
+{{define "question.tmpl"}}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="static/css/question.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <main>
+
+            <div class="container">
+                <div class="quizz-form">
+                    <form method="post" action="/quizz"> 
+                        <div class="input-box">
+                            <span>Câu hỏi {{ .Id }}: {{ .Question }}</span>
+                            <br>
+                            <br>
+                            <!--nếu checkbox thì in ra câu hỏi dạng checkbox
+                                không thì in ra dạng radio-->
+                            {{if eq .Type "checkbox"}}
+                             <!-- gán tất cả value = true để dễ xử lý két quả -->
+                                <input type={{.Type}} name="answer1" value="true"> 
+                                <label>{{ .Answer1 }}</label>
+                                <div class="margin_b"></div>
+                                <input type={{.Type}} name="answer2" value="true"> 
+                                <label>{{ .Answer2 }}</label>
+                                <div class="margin_b"></div>
+                                <input type={{.Type}} name="answer3" value="true">
+                                <label>{{ .Answer3 }}</label>
+                                <div class="margin_b"></div>
+							    <input type={{.Type}} name="answer4" value="true"> 
+                                <label>{{ .Answer4 }}</label> 
+                                <div class="margin_b"></div>
+                            <div class="btn-box">
+                            {{else}}
+                                <input type={{.Type}} name="answer" value={{.Correct1}}> 
+                                <label>{{ .Answer1 }}</label>
+                                <div class="margin_b"></div>
+                                <input type={{.Type}} name="answer" value={{.Correct2}}> 
+                                <label>{{ .Answer2 }}</label>
+                                <div class="margin_b"></div>
+                                <input type={{.Type}} name="answer" value={{.Correct3}}>
+                                <label>{{ .Answer3 }}</label>
+                                <div class="margin_b"></div>
+							    <input type={{.Type}} name="answer" value={{.Correct4}}> 
+                                <label>{{ .Answer4 }}</label>
+                                <div class="margin_b"></div>
+                                <div class="btn-box">                             
+                            {{end}}   
+                                <!--nếu câu hỏi cuối cùng thì có nút End quit, không thì là Submit and next-->
+                                {{if eq .index .lenquizz}}
+                                    <button type="submit" name="switchQ" value="end">End quizz ></button> 
+                                {{else}}
+                                     <button type="submit" name="switchQ" value="sub">Save and Next ></button>
+                                {{end}}  
+                            </div>                    
+                        <!--nếu câu hỏi đầu tiên thì chỉ có nút Next và Sumit
+                            nếu câu hỏi cuối cùng thì chỉ có nút Previous và submit-->
+                        {{if eq .index 0}}
+                            <div class="btn-box">
+                                <button type="submit" name="switchQ" value="next">Next ></button>
+                            </div>
+                        {{else if (eq .index .lenquizz)}}
+                            <div class="btn-box2">
+                                <button type="submit" name="switchQ" value="previous">< Previous</button>
+                            </div>
+                        {{else}}
+                            <div class="btn-box2">
+                                <button type="submit" name="switchQ" value="previous">< Previous</button>
+                            </div>
+                            <div class="btn-box">
+                                 <button type="submit" name="switchQ" value="next">Next ></button>
+                            </div>
+                        {{end}}
+
+                    </form>
+                </div>
+            </div>
+
+        </main>
+    </body>
+</html>
+{{end}}

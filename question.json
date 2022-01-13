@@ -1,0 +1,139 @@
+[{
+  "_id": {
+    "$oid": "6107bf8916996d0c39716714"
+  },
+  "IdAs": 1,
+  "type": "checkbox",
+  "question": "Golang hỗ trợ OS nào?",
+  "answer1": {
+    "aswer": "Windows",
+    "correct": true
+  },
+  "answer2": {
+    "aswer": "Linux",
+    "correct": true
+  },
+  "answer3": {
+    "aswer": "Mac OS",
+    "correct": true
+  },
+  "answer4": {
+    "aswer": "Android",
+    "correct": true
+  }
+},{
+  "_id": {
+    "$oid": "6107c01b16996d0c39716716"
+  },
+  "IdAs": 2,
+  "type": "radio",
+  "question": "Golang là gì?",
+  "answer1": {
+    "aswer": "Ngôn ngữ lập trình",
+    "correct": true
+  },
+  "answer2": {
+    "aswer": "Chim",
+    "correct": false
+  },
+  "answer3": {
+    "aswer": "Chó",
+    "correct": false
+  },
+  "answer4": {
+    "aswer": "Chuột",
+    "correct": false
+  }
+},{
+  "_id": {
+    "$oid": "610e200076ee253726e66bf1"
+  },
+  "IdAs": 3,
+  "type": "radio",
+  "question": "Anh Đạt quê ở đâu",
+  "answer1": {
+    "aswer": "Hưng Yên",
+    "correct": true
+  },
+  "answer2": {
+    "aswer": "Hà Nội",
+    "correct": false
+  },
+  "answer3": {
+    "aswer": "Vĩnh Phúc",
+    "correct": false
+  },
+  "answer4": {
+    "aswer": "Hà Nam",
+    "correct": false
+  }
+},{
+  "_id": {
+    "$oid": "610e20ab76ee253726e66bf2"
+  },
+  "IdAs": 4,
+  "type": "checkbox",
+  "question": "Khai báo nào đúng trong golang?",
+  "answer1": {
+    "aswer": "var b int",
+    "correct": true
+  },
+  "answer2": {
+    "aswer": "var int b",
+    "correct": false
+  },
+  "answer3": {
+    "aswer": "var b := int 10 ",
+    "correct": false
+  },
+  "answer4": {
+    "aswer": "b := 10",
+    "correct": true
+  }
+},{
+  "_id": {
+    "$oid": "61115456c72802b44be752a1"
+  },
+  "IdAs": 5,
+  "type": "checkbox",
+  "question": "20 = ?",
+  "answer1": {
+    "aswer": "3 + 3",
+    "correct": false
+  },
+  "answer2": {
+    "aswer": "14 + 6",
+    "correct": true
+  },
+  "answer3": {
+    "aswer": "3 * 10",
+    "correct": false
+  },
+  "answer4": {
+    "aswer": "4 * 5",
+    "correct": true
+  }
+},{
+  "_id": {
+    "$oid": "611154efc72802b44be752a2"
+  },
+  "IdAs": 6,
+  "type": "radio",
+  "question": "Bánh mì làm từ?",
+  "answer1": {
+    "aswer": "Lúa mạch",
+    "correct": false
+  },
+  "answer2": {
+    "aswer": "Hạt nêm",
+    "correct": false
+  },
+  "answer3": {
+    "aswer": "Cà phê",
+    "correct": false
+  },
+  "answer4": {
+    "aswer": "Lúa mì",
+    "correct": true
+  }
+}]

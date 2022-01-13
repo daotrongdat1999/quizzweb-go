@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main{
+    background-color: #dddddd;
+    min-height: auto;
+    padding: 5px 5px;
+}
+
+h1{
+    color: #009999;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.quizz-form{
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 2px dotted #cccccc;
+    border-radius: 10px;
+}
+
+.input-box{
+    margin-bottom: 5px;
+}
+
+.input-box input[type='checkbox']{
+    height: 1.2em;
+    width: 1.2em;
+    vertical-align: middle;
+    line-height: 2em;
+}
+.input-box input[type='radio']{
+    height: 1.3em;
+    width: 1.3em;
+    vertical-align: middle;
+    line-height: 2em;
+}
+
+.btn-box{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.btn-box button:hover {
+    background-color: #ddd;
+    color: black;
+  }
+.btn-box button{
+    padding: 7.5px 7.5px;
+    border-radius: 2px;
+    background-color: #009999;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+.btn-box2{
+    margin-top: 10px;
+    text-align: left;
+}
+.btn-box2 button:hover {
+    background-color: #ddd;
+    color: black;
+  }
+.btn-box2 button{
+    text-align: left;
+    padding: 7.5px 7.5px;
+    border-radius: 2px;
+    background-color: #009999;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.margin_b{
+    margin-bottom: 7.5px;
+}

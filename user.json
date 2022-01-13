@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "6108f08fcad54625c8857ab5"
+  },
+  "username": "test",
+  "password": "test",
+  "point": 0
+},{
+  "_id": {
+    "$oid": "610927bdcad54625100400d5"
+  },
+  "username": "17020668",
+  "password": "17020668",
+  "point": 0
+},{
+  "_id": {
+    "$oid": "610a32c8cad5460c8c147026"
+  },
+  "username": "root",
+  "password": "root",
+  "point": 0
+},{
+  "_id": {
+    "$oid": "61114f50cad5463670aad2a5"
+  },
+  "username": "anhyeuem",
+  "password": "123",
+  "point": 0
+}]

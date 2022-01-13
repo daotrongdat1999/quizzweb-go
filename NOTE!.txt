@@ -1,0 +1,8 @@
+- Bài này em dùng cả logic trong template nên anh nhớ đọc code
+- Em gửi kèm 2 file json là dữ liệu
+- Xây dựng dữ liệu trong db bao gồm:
+	+ Tên dữ liệu là assignment
+	+ 1 collection user lưu thông tin người dùng
+	+ 1 collection question lưu các câu hỏi
+_____________________________	
+11h47-9/8/2021
